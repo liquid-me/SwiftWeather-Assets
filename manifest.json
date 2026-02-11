@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "lastUpdated": "2026-02-11T12:00:00Z",
+  "sets": [
+    {
+      "id": "01_random_portrait",
+      "name": "Random Portrait",
+      "description": {
+        "en": "400+ weather-based wallpapers in portrait mode",
+        "de": "400+ wetterbasierte Wallpaper im Hochformat"
+      },
+      "version": "1.0.0",
+      "releaseTag": "v1.0.0",
+      "assetName": "01_random_portrait.zip",
+      "sizeMB": 400,
+      "minAppVersion": null,
+      "changelog": {
+        "en": "Initial release",
+        "de": "Erstveröffentlichung"
+      }
+    }
+  ]
+}
