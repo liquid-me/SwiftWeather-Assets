@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
-  "lastUpdated": "2026-02-11T12:00:00Z",
+  "lastUpdated": "2026-02-11T17:00:00Z",
   "sets": [
     {
       "id": "01_random_portrait",
+      "type": "randomWeatherWalls",
       "name": "Random Portrait",
       "description": {
         "en": "400+ weather-based wallpapers in portrait mode",
@@ -13,6 +14,60 @@
       "releaseTag": "v1.0.0",
       "assetName": "01_random_portrait.zip",
       "sizeMB": 400,
+      "minAppVersion": null,
+      "changelog": {
+        "en": "Initial release",
+        "de": "Erstveröffentlichung"
+      }
+    },
+    {
+      "id": "Uwe",
+      "type": "weatherWalls",
+      "name": "Uwe's Collection",
+      "description": {
+        "en": "High-quality weather wallpapers by Uwe",
+        "de": "Hochwertige Wetter-Wallpaper von Uwe"
+      },
+      "version": "1.0.0",
+      "releaseTag": "v1.1.0",
+      "assetName": "weatherwalls_uwe.zip",
+      "sizeMB": 148,
+      "minAppVersion": null,
+      "changelog": {
+        "en": "Initial release",
+        "de": "Erstveröffentlichung"
+      }
+    },
+    {
+      "id": "unsp",
+      "type": "weatherWalls",
+      "name": "Unsplash Compact",
+      "description": {
+        "en": "Compact weather wallpapers from Unsplash",
+        "de": "Kompakte Wetter-Wallpaper von Unsplash"
+      },
+      "version": "1.0.0",
+      "releaseTag": "v1.1.0",
+      "assetName": "weatherwalls_unsp.zip",
+      "sizeMB": 17,
+      "minAppVersion": null,
+      "changelog": {
+        "en": "Initial release",
+        "de": "Erstveröffentlichung"
+      }
+    },
+    {
+      "id": "unsplash",
+      "type": "weatherWalls",
+      "name": "Unsplash HD",
+      "description": {
+        "en": "HD weather wallpapers from Unsplash",
+        "de": "HD Wetter-Wallpaper von Unsplash"
+      },
+      "version": "1.0.0",
+      "releaseTag": "v1.1.0",
+      "assetName": "weatherwalls_unsplash.zip",
+      "sizeMB": 132,
       "minAppVersion": null,
       "changelog": {
         "en": "Initial release",
