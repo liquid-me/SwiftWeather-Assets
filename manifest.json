@@ -23,7 +23,7 @@
     {
       "id": "05_WeatherWallLib",
       "type": "randomWeatherWalls",
-      "name": "Weather Wall Library",
+      "name": "Random Landscape",
       "description": {
         "en": "Curated library of weather-based wallpapers",
         "de": "Kuratierte Bibliothek wetterbasierter Wallpaper"
