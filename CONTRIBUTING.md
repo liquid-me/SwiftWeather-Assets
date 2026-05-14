@@ -12,24 +12,65 @@ app. Two artifacts are public-API for the app:
 ## Locale-completeness contract
 
 `manifest.json` carries two locale-keyed dictionaries per entry:
-`description` and (optional) `changelog`. Skycast ships UI in **four**
-locales: **English (en), German (de), Spanish (es), French (fr)**.
+`description` and (optional) `changelog`. Skycast ships UI in
+**eleven** locales as of 2026-05-14 (Phase 1 Tier-1 rollout):
 
-**Hard rule (enforced by app-side CI fence):** Every `description`
-dictionary MUST have keys for ALL FOUR locales. Every `changelog`
-dictionary (when present) MUST also cover all four. Missing-locale
-entries degrade ES/FR users to the English fallback — silently —
-which is bad UX and considered a defect.
+| Code      | Language                            |
+|-----------|-------------------------------------|
+| `en`      | English (terminal fallback)         |
+| `de`      | German                              |
+| `es`      | Spanish                             |
+| `fr`      | French                              |
+| `it`      | Italian                             |
+| `ja`      | Japanese                            |
+| `pt-BR`   | Brazilian Portuguese                |
+| `pt-PT`   | Continental Portuguese              |
+| `ru`      | Russian                             |
+| `zh-Hans` | Simplified Chinese                  |
+| `zh-Hant` | Traditional Chinese                 |
 
-Adding a 5th language to Skycast triggers a coordinated update:
+The canonical SoT lives in
+`SwiftWeather/Core/Helpers/AppLocales.swift` in the Skycast main repo.
+Any future locale addition is reflected there first; this manifest
+must then be extended to match.
 
-1. Add the locale to `AppLocales.supported` in the app (`Core/Helpers/AppLocales.swift`)
-2. Add the language code to `knownRegions` in `project.pbxproj`
-3. Add the `<lang>.lproj/` directories with `Localizable.strings` + `InfoPlist.strings`
-4. **Update every `description` and `changelog` in this manifest** to include the new locale
-5. The app's `BundledCatalogLocaleCompletenessFenceTests` +
-   `LiveManifestLocaleCompletenessIntegrationTests` will catch
-   incomplete entries at CI time
+**Hard rule (enforced by app-side CI fence
+`LiveManifestLocaleCompletenessIntegrationTests`):** Every
+`description` dictionary MUST have keys for ALL eleven locales.
+Every `changelog` dictionary (when present) MUST also cover all
+eleven. Missing-locale entries silently degrade users to the English
+fallback — bad UX, considered a defect. Empty-string values are
+valid (signals "intentionally blank" per the
+`LocalizedDictionary` contract); the fence checks key presence, not
+value content.
+
+## Adding a Phase-N locale (cross-repo extension)
+
+When Skycast's `AppLocales.supported` grows, this manifest must
+extend in lock-step. The canonical tool is
+`scripts/ensure_locale_coverage.py` in the Skycast main repo:
+
+```bash
+# From the Skycast main repo, with this assets repo cloned to /tmp/SwiftWeather-Assets:
+python3 scripts/ensure_locale_coverage.py \
+    --input /tmp/SwiftWeather-Assets/manifest.json \
+    --locales-from-swift
+
+# Or with explicit locale list (works without the Swift source):
+python3 scripts/ensure_locale_coverage.py \
+    --input /tmp/SwiftWeather-Assets/manifest.json \
+    --locales de en es fr it ja pt-BR pt-PT ru zh-Hans zh-Hant
+```
+
+The tool is idempotent + verify-mode-aware. CI integration:
+
+```bash
+# Verify-only: exit 1 if any extension would be required (for pre-commit / CI)
+python3 .../ensure_locale_coverage.py --input manifest.json --verify --locales ...
+```
+
+The Phase-1 cross-repo extension (84 keys across 6 entries × 2 fields
+× 7 new locales) was applied via this tool on 2026-05-14.
 
 ## Adding a new WeatherWalls set
 
@@ -42,13 +83,14 @@ Adding a 5th language to Skycast triggers a coordinated update:
    - `id` — folder name post-extract (case-sensitive)
    - `type` — `"weatherWalls"` OR `"randomWeatherWalls"`
    - `name` — user-facing display name
-   - `description` — **all four locales required** (see contract above)
+   - `description` — **all eleven locales required** (see contract above; use
+     `ensure_locale_coverage.py` to auto-fill empty placeholders)
    - `version` — semver string
    - `releaseTag` — matches the GitHub Release tag exactly
    - `assetName` — matches the asset filename exactly
    - `sizeMB` — integer MB (decimal, rounded)
    - `minAppVersion` — null unless the entry requires a specific app build
-   - `changelog` — optional but if present, **all four locales required**
+   - `changelog` — optional but if present, **all eleven locales required**
 4. Bump `lastUpdated` to current UTC ISO 8601 timestamp
 5. Commit + push to `main` — the app will pick up the new entry on
    the next `WeatherWallsDownloader.fetchManifest()` call (typically
@@ -60,4 +102,7 @@ Adding a 5th language to Skycast triggers a coordinated update:
 - UTF-8 without BOM
 - Final newline at EOF
 - Preserve key order: `id, type, name, description, version, releaseTag, assetName, sizeMB, minAppVersion, changelog`
-- Inside `description` / `changelog` dicts: `en, de, es, fr` (alphabetical-after-en convention)
+- Inside `description` / `changelog` dicts: prefer `en, de, es, fr, it, ja, pt-BR, pt-PT, ru, zh-Hans, zh-Hant`
+  ordering (English-first for translator readability, then by Skycast's
+  `AppLocales.supported` order). The
+  `ensure_locale_coverage.py` tool's append-order respects this.

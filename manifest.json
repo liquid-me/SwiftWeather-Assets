@@ -10,7 +10,14 @@
         "en": "400+ weather-based wallpapers in portrait mode",
         "de": "400+ wetterbasierte Wallpaper im Hochformat",
         "es": "Más de 400 fondos de pantalla basados en el clima en modo retrato",
-        "fr": "Plus de 400 fonds d'écran météo en mode portrait"
+        "fr": "Plus de 400 fonds d'écran météo en mode portrait",
+        "it": "",
+        "ja": "",
+        "pt-BR": "",
+        "pt-PT": "",
+        "ru": "",
+        "zh-Hans": "",
+        "zh-Hant": ""
       },
       "version": "1.1.1",
       "releaseTag": "v1.1.1",
@@ -21,7 +28,14 @@
         "en": "Updated wallpapers",
         "de": "Aktualisierte Wallpaper",
         "es": "Fondos actualizados",
-        "fr": "Fonds d'écran mis à jour"
+        "fr": "Fonds d'écran mis à jour",
+        "it": "",
+        "ja": "",
+        "pt-BR": "",
+        "pt-PT": "",
+        "ru": "",
+        "zh-Hans": "",
+        "zh-Hant": ""
       }
     },
     {
@@ -32,7 +46,14 @@
         "en": "Curated library of weather-based wallpapers",
         "de": "Kuratierte Bibliothek wetterbasierter Wallpaper",
         "es": "Biblioteca curada de fondos de pantalla basados en el clima",
-        "fr": "Bibliothèque organisée de fonds d'écran basés sur la météo"
+        "fr": "Bibliothèque organisée de fonds d'écran basés sur la météo",
+        "it": "",
+        "ja": "",
+        "pt-BR": "",
+        "pt-PT": "",
+        "ru": "",
+        "zh-Hans": "",
+        "zh-Hant": ""
       },
       "version": "1.0.0",
       "releaseTag": "05_WeatherWallLib-v1.0.0",
@@ -43,7 +64,14 @@
         "en": "Initial release",
         "de": "Erstveröffentlichung",
         "es": "Versión inicial",
-        "fr": "Version initiale"
+        "fr": "Version initiale",
+        "it": "",
+        "ja": "",
+        "pt-BR": "",
+        "pt-PT": "",
+        "ru": "",
+        "zh-Hans": "",
+        "zh-Hant": ""
       }
     },
     {
@@ -54,7 +82,14 @@
         "en": "Uwe's personal weather wallpaper collection",
         "de": "Uwes persönliche Wetter-Wallpaper-Sammlung",
         "es": "Colección personal de fondos meteorológicos de Uwe",
-        "fr": "Collection personnelle de fonds d'écran météo d'Uwe"
+        "fr": "Collection personnelle de fonds d'écran météo d'Uwe",
+        "it": "",
+        "ja": "",
+        "pt-BR": "",
+        "pt-PT": "",
+        "ru": "",
+        "zh-Hans": "",
+        "zh-Hant": ""
       },
       "version": "1.1.0",
       "releaseTag": "v1.1.0",
@@ -65,7 +100,14 @@
         "en": "Updated wallpapers",
         "de": "Aktualisierte Wallpaper",
         "es": "Fondos actualizados",
-        "fr": "Fonds d'écran mis à jour"
+        "fr": "Fonds d'écran mis à jour",
+        "it": "",
+        "ja": "",
+        "pt-BR": "",
+        "pt-PT": "",
+        "ru": "",
+        "zh-Hans": "",
+        "zh-Hant": ""
       }
     },
     {
@@ -76,7 +118,14 @@
         "en": "Compact Unsplash weather wallpaper set",
         "de": "Kompaktes Unsplash-Wetter-Wallpaper-Set",
         "es": "Conjunto compacto de fondos meteorológicos Unsplash",
-        "fr": "Ensemble compact de fonds d'écran météo Unsplash"
+        "fr": "Ensemble compact de fonds d'écran météo Unsplash",
+        "it": "",
+        "ja": "",
+        "pt-BR": "",
+        "pt-PT": "",
+        "ru": "",
+        "zh-Hans": "",
+        "zh-Hant": ""
       },
       "version": "1.1.0",
       "releaseTag": "v1.1.0",
@@ -87,7 +136,14 @@
         "en": "Initial release",
         "de": "Erstveröffentlichung",
         "es": "Versión inicial",
-        "fr": "Version initiale"
+        "fr": "Version initiale",
+        "it": "",
+        "ja": "",
+        "pt-BR": "",
+        "pt-PT": "",
+        "ru": "",
+        "zh-Hans": "",
+        "zh-Hant": ""
       }
     },
     {
@@ -98,7 +154,14 @@
         "en": "Full Unsplash weather wallpaper collection",
         "de": "Vollständige Unsplash-Wetter-Wallpaper-Sammlung",
         "es": "Colección completa de fondos meteorológicos Unsplash",
-        "fr": "Collection complète de fonds d'écran météo Unsplash"
+        "fr": "Collection complète de fonds d'écran météo Unsplash",
+        "it": "",
+        "ja": "",
+        "pt-BR": "",
+        "pt-PT": "",
+        "ru": "",
+        "zh-Hans": "",
+        "zh-Hant": ""
       },
       "version": "1.1.0",
       "releaseTag": "v1.1.0",
@@ -109,7 +172,14 @@
         "en": "Initial release",
         "de": "Erstveröffentlichung",
         "es": "Versión inicial",
-        "fr": "Version initiale"
+        "fr": "Version initiale",
+        "it": "",
+        "ja": "",
+        "pt-BR": "",
+        "pt-PT": "",
+        "ru": "",
+        "zh-Hans": "",
+        "zh-Hant": ""
       }
     },
     {
@@ -120,7 +190,14 @@
         "en": "Glance weather wallpaper collection",
         "de": "Glance Wetter-Wallpaper-Sammlung",
         "es": "Colección de fondos meteorológicos Glance",
-        "fr": "Collection de fonds d'écran météo Glance"
+        "fr": "Collection de fonds d'écran météo Glance",
+        "it": "",
+        "ja": "",
+        "pt-BR": "",
+        "pt-PT": "",
+        "ru": "",
+        "zh-Hans": "",
+        "zh-Hant": ""
       },
       "version": "1.0.0",
       "releaseTag": "Glance-v1.0.0",
@@ -131,7 +208,14 @@
         "en": "Initial release",
         "de": "Erstveröffentlichung",
         "es": "Versión inicial",
-        "fr": "Version initiale"
+        "fr": "Version initiale",
+        "it": "",
+        "ja": "",
+        "pt-BR": "",
+        "pt-PT": "",
+        "ru": "",
+        "zh-Hans": "",
+        "zh-Hant": ""
       }
     }
   ]
