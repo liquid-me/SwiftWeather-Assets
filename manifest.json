@@ -18,7 +18,8 @@
         "ru": "",
         "zh-Hans": "",
         "zh-Hant": "",
-        "nl": ""
+        "nl": "",
+        "sv": ""
       },
       "version": "1.1.1",
       "releaseTag": "v1.1.1",
@@ -37,7 +38,8 @@
         "ru": "",
         "zh-Hans": "",
         "zh-Hant": "",
-        "nl": ""
+        "nl": "",
+        "sv": ""
       }
     },
     {
@@ -56,7 +58,8 @@
         "ru": "",
         "zh-Hans": "",
         "zh-Hant": "",
-        "nl": ""
+        "nl": "",
+        "sv": ""
       },
       "version": "1.0.0",
       "releaseTag": "05_WeatherWallLib-v1.0.0",
@@ -75,7 +78,8 @@
         "ru": "",
         "zh-Hans": "",
         "zh-Hant": "",
-        "nl": ""
+        "nl": "",
+        "sv": ""
       }
     },
     {
@@ -94,7 +98,8 @@
         "ru": "",
         "zh-Hans": "",
         "zh-Hant": "",
-        "nl": ""
+        "nl": "",
+        "sv": ""
       },
       "version": "1.1.0",
       "releaseTag": "v1.1.0",
@@ -113,7 +118,8 @@
         "ru": "",
         "zh-Hans": "",
         "zh-Hant": "",
-        "nl": ""
+        "nl": "",
+        "sv": ""
       }
     },
     {
@@ -132,7 +138,8 @@
         "ru": "",
         "zh-Hans": "",
         "zh-Hant": "",
-        "nl": ""
+        "nl": "",
+        "sv": ""
       },
       "version": "1.1.0",
       "releaseTag": "v1.1.0",
@@ -151,7 +158,8 @@
         "ru": "",
         "zh-Hans": "",
         "zh-Hant": "",
-        "nl": ""
+        "nl": "",
+        "sv": ""
       }
     },
     {
@@ -170,7 +178,8 @@
         "ru": "",
         "zh-Hans": "",
         "zh-Hant": "",
-        "nl": ""
+        "nl": "",
+        "sv": ""
       },
       "version": "1.1.0",
       "releaseTag": "v1.1.0",
@@ -189,7 +198,8 @@
         "ru": "",
         "zh-Hans": "",
         "zh-Hant": "",
-        "nl": ""
+        "nl": "",
+        "sv": ""
       }
     },
     {
@@ -208,7 +218,8 @@
         "ru": "",
         "zh-Hans": "",
         "zh-Hant": "",
-        "nl": ""
+        "nl": "",
+        "sv": ""
       },
       "version": "1.0.0",
       "releaseTag": "Glance-v1.0.0",
@@ -227,7 +238,8 @@
         "ru": "",
         "zh-Hans": "",
         "zh-Hant": "",
-        "nl": ""
+        "nl": "",
+        "sv": ""
       }
     }
   ]
