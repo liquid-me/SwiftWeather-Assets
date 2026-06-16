@@ -7,7 +7,8 @@ app. Two artifacts are public-API for the app:
   downloadable WeatherWalls sets. Schema is documented in
   `SwiftWeather/Services/WeatherWallsManifest.swift`.
 - `shortcut-version.json` — version pointer for the bundled Skycast
-  Shortcut. Format: see `RELEASE_PROCESS.md`.
+  Shortcut. Format + bump ritual: see the **Skycast Shortcut** section in
+  `RELEASE_PROCESS.md`.
 
 ## Locale-completeness contract
 
